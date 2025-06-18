@@ -1,0 +1,68 @@
+@use "reset";
+@use "variables";
+@use "placeholders";
+@use "mixins";
+
+
+
+body {
+    background-color: rgb(241, 241, 241);    
+    header {
+        display: flex;
+        margin-left: 66px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        @include mixins.go-flex(row, space-between, center);
+
+        .nav1 li {
+            display: inline;
+            margin: 20px;
+          }
+    }
+  
+    main {
+      @include mixins.go-flex(row, space-around);
+      gap: 50px;
+  
+      section {
+        @extend %widget-size;
+        @include mixins.go-flex(column, flex-start, flex-start);
+  
+        .widget-image {
+          width: 100%;
+          height: 190px;
+          background-image: url("../img/beach2.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          padding-top: 30px;
+          padding-left: 40px;
+  
+          h1 {
+            color: variables.$primary-color;
+            font-size: variables.$font-size-l;
+          }
+        }
+  
+        .widget-description {
+          width: 100%;
+          height: 170px;
+          padding-top: 70px;
+          padding-left: 40px;
+          background-color: variables.$primary-color;
+  
+          p,
+          span {
+            color: variables.$secondary-color;
+            font-size: variables.$font-size-s;
+          }
+  
+          p {
+            width: 240px;
+            line-height: 20px;
+            margin-bottom: 14px;
+          }
+        }
+      }
+    }
+}
