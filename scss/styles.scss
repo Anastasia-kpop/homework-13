@@ -19,6 +19,14 @@ body {
             margin: 20px;
           }
     }
+
+    .H {
+        font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 27px;
+    margin-left: 80px;
+    }
   
     main {
       @include mixins.go-flex(row, space-around);
@@ -65,4 +73,71 @@ body {
         }
       }
     }
+
+    .middle {
+                display: flex;
+                height: 1040px;
+                width: 1400px;
+                flex-wrap: nowrap;
+
+                .div2 {
+                    display: flex;
+
+                    .H2 {
+                        font-size: 24px;
+                        font-weight: 700;
+                        color: #000000;
+                        margin: 66px;
+                        width:0px;
+                    }
+            
+            
+                    .images-left-side {
+                        margin-top: 200px;
+            
+                        .d {
+                            display: flex;
+                            width: 362px;
+                            margin-bottom: 50px;
+            
+                            .p2 {
+                                color: #FFFFFF;
+                                font-size: 20px;
+                                font-weight: 700;
+                                position: absolute;
+                                margin: auto;
+                                top: 955px;
+                left: 500px;
+                            }
+                            
+                            .p1-2 {
+                            position: relative;
+                            }
+            
+                            .p1 {
+                                width: 750px;
+                                height: 430px;
+                                display: inline-block;
+                                margin-bottom: 70px;
+                            }
+                        }
+                    }
+                    
+                    
+                
+                    .images-right-side {
+                        height: 835px;
+                width: 365px;
+                display: inline-block;
+                margin-top: 200px;
+                margin-left: 70px;
+                
+                        .i3 {
+                            margin-bottom: 130px;
+                        }
+                    }
+                }
+
+        
+    } 
 }
