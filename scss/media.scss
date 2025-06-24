@@ -32,7 +32,8 @@
         .div2 {
 
     .images-left-side {
-        margin-top: 110px;
+        margin-top: 20px;
+        margin-left: 32px;
 
         .d {
             .p2 {
@@ -51,7 +52,7 @@
         height: 835px;
         width: 365px;
         display: inline-block;
-        margin-top: 110px;
+        margin-top: 20px;
         margin-left: 14px;
     }
 }
@@ -124,16 +125,23 @@
     height: 1732px;
 
        .images-left-side {
-                    margin-top: 110px;
+                    margin-top: 20px;
                     display: flex;
                     flex-direction: column;
                     margin-left: 11%;
+
+                    .d{
+                        .p2{
+                            top: 1665px;
+                            left: 272px;
+                        }
+                    }
                 }
             .images-right-side {
         height: 835px;
         width: 365px;
         display: flex;
-        margin-top: 110px;
+        margin-top: 50px;
         margin-left: 25%;
         flex-direction: column;
 
@@ -145,7 +153,7 @@
 }
 
 footer {
-    margin-top: 815px;
+    margin-top: 675px;
 
     div {
         display: inline-block;
@@ -166,5 +174,56 @@ footer {
 }
 
 @media (max-width: 480px) {
-    
-}
+    body {
+        header {
+            .nav1 {
+                li {
+                    margin: 14px;
+                }
+            }
+        }
+
+        .middle {
+            .div2 {
+                    .images-left-side {
+                        margin-top: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 4%;
+
+                        .p1 {
+                            width: 438px;
+                        }
+
+                        .d {
+                            .p1-2 {
+                                width: 438px;
+                            }
+
+                            .p2 {
+                                top: 1610px;
+        left: 150px;
+                            }
+                        }
+                    }
+
+                    .images-right-side {
+                        margin-left: 11%;
+                    }
+                }
+            }
+
+            footer {
+                margin-top: 468px;
+
+                div {
+                    margin-left: 25px;
+                    margin-right: 25px;
+                }
+
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
